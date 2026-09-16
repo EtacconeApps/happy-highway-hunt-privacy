@@ -1,0 +1,420 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Happy Highway Hunt Privacy Policy</title>
+<style>
+  :root {
+    --bg: #eaf4fb;
+    --surface: #ffffff;
+    --surface-tint: #f4f9fc;
+    --text-primary: #16324f;
+    --text-secondary: #4b6a83;
+    --text-tertiary: #7994a8;
+    --border: #d7e6f0;
+    --accent-green: #2f7a3c;
+    --accent-green-bg: #e3f3e6;
+    --accent-blue: #2f6ea3;
+    --accent-blue-bg: #e2eef7;
+    --shadow: 0 1px 2px rgba(22,50,79,0.05), 0 8px 24px rgba(22,50,79,0.06);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0f1c26;
+      --surface: #16232d;
+      --surface-tint: #192834;
+      --text-primary: #eaf3f9;
+      --text-secondary: #aac1d1;
+      --text-tertiary: #7f97a8;
+      --border: #263846;
+      --accent-green: #74c37f;
+      --accent-green-bg: rgba(116,195,127,0.14);
+      --accent-blue: #82bce8;
+      --accent-blue-bg: rgba(130,188,232,0.14);
+      --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 8px 24px rgba(0,0,0,0.35);
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #0f1c26;
+    --surface: #16232d;
+    --surface-tint: #192834;
+    --text-primary: #eaf3f9;
+    --text-secondary: #aac1d1;
+    --text-tertiary: #7f97a8;
+    --border: #263846;
+    --accent-green: #74c37f;
+    --accent-green-bg: rgba(116,195,127,0.14);
+    --accent-blue: #82bce8;
+    --accent-blue-bg: rgba(130,188,232,0.14);
+    --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 8px 24px rgba(0,0,0,0.35);
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--bg);
+    color: var(--text-primary);
+    font-family: 'Nunito', -apple-system, BlinkMacSystemFont, sans-serif;
+    margin: 0;
+    padding-inline: 20px;
+    padding-block: 40px;
+    line-height: 1.65;
+  }
+
+  h1, h2, .display {
+    font-family: 'Baloo 2', 'Nunito', sans-serif;
+    text-wrap: balance;
+  }
+
+  .page {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  header.doc-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 8px;
+  }
+
+  .badge {
+    width: 48px;
+    height: 48px;
+    border-radius: 14px;
+    background: var(--accent-green-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    box-shadow: var(--shadow);
+  }
+  .badge svg { width: 26px; height: 26px; }
+
+  .eyebrow {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--text-tertiary);
+    margin: 0 0 2px;
+  }
+
+  h1 {
+    font-size: clamp(26px, 5vw, 32px);
+    font-weight: 700;
+    margin: 0;
+    color: var(--text-primary);
+  }
+
+  .meta-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 18px 0 30px;
+  }
+  .pill {
+    font-size: 12.5px;
+    font-weight: 700;
+    padding: 5px 12px;
+    border-radius: 999px;
+    background: var(--surface);
+    color: var(--text-secondary);
+    border: 1px solid var(--border);
+  }
+  .pill.accent {
+    background: var(--accent-blue-bg);
+    color: var(--accent-blue);
+    border-color: transparent;
+  }
+
+  .intro {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    padding: 20px 22px;
+    color: var(--text-secondary);
+    font-size: 15.5px;
+    box-shadow: var(--shadow);
+    margin-bottom: 34px;
+  }
+  .intro strong { color: var(--text-primary); }
+
+  nav.toc {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 16px;
+    padding: 16px 20px;
+    margin-bottom: 40px;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+  }
+  nav.toc a {
+    font-size: 13.5px;
+    font-weight: 600;
+    color: var(--text-secondary);
+    text-decoration: none;
+  }
+  nav.toc a:hover { color: var(--accent-green); }
+
+  section {
+    margin-bottom: 38px;
+    scroll-margin-top: 20px;
+  }
+
+  .sec-num {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 26px;
+    height: 26px;
+    border-radius: 8px;
+    background: var(--accent-green-bg);
+    color: var(--accent-green);
+    font-size: 13px;
+    font-weight: 700;
+    font-family: 'Baloo 2', sans-serif;
+    margin-right: 10px;
+    flex-shrink: 0;
+  }
+
+  h2 {
+    font-size: 19px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    margin: 0 0 12px;
+    color: var(--text-primary);
+  }
+
+  section p {
+    margin: 0 0 12px;
+    color: var(--text-secondary);
+    font-size: 15.5px;
+  }
+  section p:last-child { margin-bottom: 0; }
+  section ul {
+    margin: 0 0 12px;
+    padding-left: 20px;
+    color: var(--text-secondary);
+    font-size: 15.5px;
+  }
+  section li { margin-bottom: 6px; }
+  section li:last-child { margin-bottom: 0; }
+
+  .data-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    font-size: 14.5px;
+  }
+  .data-table-wrap { overflow-x: auto; border-radius: 14px; }
+  .data-table th, .data-table td {
+    text-align: left;
+    padding: 12px 14px;
+    vertical-align: top;
+    border-bottom: 1px solid var(--border);
+  }
+  .data-table th {
+    font-family: 'Baloo 2', sans-serif;
+    font-size: 12.5px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--text-tertiary);
+    background: var(--surface-tint);
+  }
+  .data-table tr:last-child td { border-bottom: none; }
+  .data-table td { color: var(--text-secondary); }
+  .data-table td.field { color: var(--text-primary); font-weight: 700; white-space: nowrap; }
+
+  .not-collected {
+    margin-top: 14px;
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 14px 16px;
+    font-size: 14.5px;
+    color: var(--text-secondary);
+  }
+  .not-collected b { color: var(--text-primary); }
+
+  .contact-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    padding: 22px;
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px 28px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .contact-card a {
+    color: var(--accent-green);
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  .contact-card a:hover { text-decoration: underline; }
+
+  footer {
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+    color: var(--text-tertiary);
+    font-size: 13px;
+    text-align: center;
+  }
+
+  @media (max-width: 480px) {
+    body { padding-inline: 16px; }
+    .contact-card { flex-direction: column; align-items: flex-start; }
+  }
+</style>
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700&family=Nunito:wght@400;600;700&display=swap">
+
+</head>
+<body>
+<div class="page">
+
+  <header class="doc-header">
+    <div class="badge">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M3 12.5 4.6 8a2 2 0 0 1 1.9-1.4h11l2 4.3M3 12.5V17a1 1 0 0 0 1 1h1.4M3 12.5h18M20.6 12.5V17a1 1 0 0 1-1 1h-1.4" stroke="#2f7a3c" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="7.5" cy="18" r="1.7" stroke="#2f7a3c" stroke-width="1.7"/>
+        <circle cx="16.5" cy="18" r="1.7" stroke="#2f7a3c" stroke-width="1.7"/>
+      </svg>
+    </div>
+    <div>
+      <p class="eyebrow">Happy Highway Hunt</p>
+      <h1>Privacy Policy</h1>
+    </div>
+  </header>
+
+  <div class="meta-row">
+    <span class="pill accent">Effective September 16, 2026</span>
+    <span class="pill">Applies to iOS &amp; Android</span>
+  </div>
+
+  <div class="intro">
+    Happy Highway Hunt is a family road-trip game. This page explains, in plain terms, what
+    information the app collects, why, and how it's handled. <strong>Short version:</strong> we
+    collect only what's needed to sync a trip between the phones playing it together — the
+    players' names, a random device ID, and the trip's own game data. Nothing is sold, and
+    nothing is used for advertising or tracking.
+  </div>
+
+  <nav class="toc">
+    <a href="#collect">1. Information we collect</a>
+    <a href="#use">2. How we use it</a>
+    <a href="#sharing">3. Sharing &amp; third parties</a>
+    <a href="#storage">4. Storage &amp; security</a>
+    <a href="#choices">5. Retention &amp; your choices</a>
+    <a href="#rights">6. Your rights</a>
+    <a href="#children">7. Children's privacy</a>
+    <a href="#changes">8. Changes</a>
+    <a href="#contact">9. Contact</a>
+  </nav>
+
+  <section id="collect">
+    <h2><span class="sec-num">1</span>Information we collect</h2>
+    <p>When you set up a family group and play a trip, the app stores the following in order to sync results across everyone's phones:</p>
+    <div class="data-table-wrap">
+      <table class="data-table">
+        <thead>
+          <tr><th>What</th><th>What it is</th><th>Why we collect it</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="field">Player name</td>
+            <td>The name you give a player profile (e.g. a first name or nickname).</td>
+            <td>Shown on bets, trip history, and the "Wrapped" recap so results are attributed to the right person.</td>
+          </tr>
+          <tr>
+            <td class="field">Device / user ID</td>
+            <td>A random identifier created automatically when the app first opens (via anonymous sign-in) — not your Apple ID, Google account, email, or phone number.</td>
+            <td>Ties your phone to your family group and player profile so trip data syncs correctly.</td>
+          </tr>
+          <tr>
+            <td class="field">Gameplay data</td>
+            <td>Bets placed, countries/plates spotted, timestamps, trip names, and results.</td>
+            <td>This is the game itself — it's what gets synced and shown in Trip History and Wrapped.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="not-collected">
+      <span>🚫</span>
+      <span><b>We do not collect:</b> your precise or approximate location, contacts, photos, browsing history, payment information, or any advertising identifier. The app doesn't use GPS — trip names and locations, if you add them, are typed in manually and optional.</span>
+    </div>
+  </section>
+
+  <section id="use">
+    <h2><span class="sec-num">2</span>How we use it</h2>
+    <p>Everything collected is used for exactly one purpose: making the game work across the phones playing together — placing and comparing bets, logging spotted plates in real time, keeping trip history, resuming a trip on a different phone if one runs out of battery, and building the yearly "Wrapped" recap. We don't use your data for advertising, profiling, or any purpose unrelated to running the game.</p>
+  </section>
+
+  <section id="sharing">
+    <h2><span class="sec-num">3</span>Sharing &amp; third parties</h2>
+    <p>We don't sell your information, and we don't share it with advertisers, data brokers, or analytics networks. The only outside party involved is our cloud database provider, <strong>Google Firebase</strong>, which stores and syncs the data described above on our behalf, under its own security and data-processing terms. Firebase acts strictly as our infrastructure — it doesn't use your data for its own purposes.</p>
+    <p>We may disclose information if required to by law, or to protect the rights, safety, or property of our users or the app.</p>
+  </section>
+
+  <section id="storage">
+    <h2><span class="sec-num">4</span>Storage &amp; security</h2>
+    <p>Game data is stored in Google Firebase's cloud infrastructure and on your device (so the app keeps working without a signal). We rely on Firebase's access-control rules to keep one family's data separate from another's. No method of transmission or storage is 100% secure, but we don't collect anything beyond what's described above, which limits what could ever be exposed.</p>
+  </section>
+
+  <section id="choices">
+    <h2><span class="sec-num">5</span>Retention &amp; your choices</h2>
+    <ul>
+      <li><strong>Leaving a family</strong> stops your phone from syncing further, but trips already saved to that family's shared history aren't deleted, since other members still rely on them.</li>
+      <li><strong>Clearing trip history</strong> (Settings → Data) permanently deletes the family's saved trip records from our servers. This doesn't affect player profiles or settings.</li>
+      <li><strong>Disbanding a family</strong> (leaving as its last member) permanently retires that family's invite code and its data along with it.</li>
+      <li>If you'd like your data deleted outside of these in-app actions, contact us using the details below and we'll take care of it.</li>
+    </ul>
+  </section>
+
+  <section id="rights">
+    <h2><span class="sec-num">6</span>Your rights</h2>
+    <p>Depending on where you live, you may have the right to access, correct, delete, or receive a copy of your personal data, and to object to or restrict certain processing. To exercise any of these, email us at the address below. If you're in the European Economic Area, you also have the right to lodge a complaint with your local data protection authority (in Italy, the Garante per la protezione dei dati personali).</p>
+  </section>
+
+  <section id="children">
+    <h2><span class="sec-num">7</span>Children's privacy</h2>
+    <p>Happy Highway Hunt is designed to be played by families together and isn't directed at children under 13 as an independent user. We don't knowingly collect personal information directly from children without a parent or guardian setting up and supervising the family group. If you believe a child has provided us information outside of that context, contact us and we'll remove it.</p>
+  </section>
+
+  <section id="changes">
+    <h2><span class="sec-num">8</span>Changes to this policy</h2>
+    <p>If this policy changes, we'll update the effective date above and, for material changes, post a notice inside the app (Settings → About). We encourage checking back here occasionally.</p>
+  </section>
+
+  <section id="contact">
+    <h2><span class="sec-num">9</span>Contact</h2>
+    <div class="contact-card">
+      <div>
+        <p style="margin:0 0 4px;color:var(--text-primary);font-weight:700;">Questions about this policy or your data?</p>
+        <p style="margin:0;color:var(--text-secondary);font-size:14.5px;">We're happy to help — just reach out.</p>
+      </div>
+      <a href="mailto:etaccone.apps@gmail.com">etaccone.apps@gmail.com</a>
+    </div>
+  </section>
+
+  <footer>
+    Happy Highway Hunt — Privacy Policy · Last updated September 16, 2026
+  </footer>
+
+</div>
+</body>
+</html>
