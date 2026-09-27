@@ -302,12 +302,12 @@
   </header>
 
   <div class="meta-row">
-    <span class="pill accent">Effective September 16, 2026</span>
+    <span class="pill accent">Effective September 27, 2026</span>
     <span class="pill">Applies to iOS &amp; Android</span>
   </div>
 
   <div class="intro">
-    Happy Highway Hunt is a family road-trip game. This page explains, in plain terms, what
+    Happy Highway Hunt is a road-trip guessing game for families and friends. This page explains, in plain terms, what
     information the app collects, why, and how it's handled. <strong>Short version:</strong> we
     collect only what's needed to sync a trip between the phones playing it together — the
     players' names, a random device ID, and the trip's own game data. Nothing is sold, and
@@ -328,7 +328,7 @@
 
   <section id="collect">
     <h2><span class="sec-num">1</span>Information we collect</h2>
-    <p>When you set up a family group and play a trip, the app stores the following in order to sync results across everyone's phones:</p>
+    <p>When you set up a team and play a trip, the app stores the following in order to sync results across everyone's phones:</p>
     <div class="data-table-wrap">
       <table class="data-table">
         <thead>
@@ -338,16 +338,21 @@
           <tr>
             <td class="field">Player name</td>
             <td>The name you give a player profile (e.g. a first name or nickname).</td>
-            <td>Shown on bets, trip history, and the "Wrapped" recap so results are attributed to the right person.</td>
+            <td>Shown on guesses, trip history, and the "Wrapped" recap so results are attributed to the right person.</td>
+          </tr>
+          <tr>
+            <td class="field">Team details</td>
+            <td>The team's name, its list of players, and its invite code.</td>
+            <td>Lets everyone on the team — and anyone they invite — find and join the same team.</td>
           </tr>
           <tr>
             <td class="field">Device / user ID</td>
             <td>A random identifier created automatically when the app first opens (via anonymous sign-in) — not your Apple ID, Google account, email, or phone number.</td>
-            <td>Ties your phone to your family group and player profile so trip data syncs correctly.</td>
+            <td>Ties your phone to your team so trip data syncs correctly. It's stored only on your phone — on a new phone, you rejoin your team with its invite code.</td>
           </tr>
           <tr>
             <td class="field">Gameplay data</td>
-            <td>Bets placed, countries/plates spotted, timestamps, trip names, and results.</td>
+            <td>Guesses, countries/plates spotted, timestamps, trip names, and results.</td>
             <td>This is the game itself — it's what gets synced and shown in Trip History and Wrapped.</td>
           </tr>
         </tbody>
@@ -355,32 +360,34 @@
     </div>
     <div class="not-collected">
       <span>🚫</span>
-      <span><b>We do not collect:</b> your precise or approximate location, contacts, photos, browsing history, payment information, or any advertising identifier. The app doesn't use GPS — trip names and locations, if you add them, are typed in manually and optional.</span>
+      <span><b>We do not collect:</b> your precise or approximate location, contacts, photos, browsing history, payment information, or any advertising identifier. The app doesn't use GPS or your camera — plates are logged by typing a country code, and trip names are optional and typed in by hand. There's no analytics or crash-reporting built into the app.</span>
     </div>
   </section>
 
   <section id="use">
     <h2><span class="sec-num">2</span>How we use it</h2>
-    <p>Everything collected is used for exactly one purpose: making the game work across the phones playing together — placing and comparing bets, logging spotted plates in real time, keeping trip history, resuming a trip on a different phone if one runs out of battery, and building the yearly "Wrapped" recap. We don't use your data for advertising, profiling, or any purpose unrelated to running the game.</p>
+    <p>Everything collected is used for exactly one purpose: making the game work across the phones playing together — placing and comparing guesses, logging spotted plates in real time, keeping trip history, resuming a trip on a different phone if one runs out of battery, and building the yearly "Wrapped" recap. We don't use your data for advertising, profiling, or any purpose unrelated to running the game.</p>
   </section>
 
   <section id="sharing">
     <h2><span class="sec-num">3</span>Sharing &amp; third parties</h2>
     <p>We don't sell your information, and we don't share it with advertisers, data brokers, or analytics networks. The only outside party involved is our cloud database provider, <strong>Google Firebase</strong>, which stores and syncs the data described above on our behalf, under its own security and data-processing terms. Firebase acts strictly as our infrastructure — it doesn't use your data for its own purposes.</p>
+    <p><strong>Within your team:</strong> anyone who joins a team using its invite code can see everything stored for that team — the players, trip history, guesses, and results. Only share your invite code with people you'd want to see that.</p>
     <p>We may disclose information if required to by law, or to protect the rights, safety, or property of our users or the app.</p>
   </section>
 
   <section id="storage">
     <h2><span class="sec-num">4</span>Storage &amp; security</h2>
-    <p>Game data is stored in Google Firebase's cloud infrastructure and on your device (so the app keeps working without a signal). We rely on Firebase's access-control rules to keep one family's data separate from another's. No method of transmission or storage is 100% secure, but we don't collect anything beyond what's described above, which limits what could ever be exposed.</p>
+    <p>Game data is stored in Google Firebase's cloud infrastructure and on your device (so the app keeps working without a signal). We rely on Firebase's access-control rules to keep one team's data separate from another's. No method of transmission or storage is 100% secure, but we don't collect anything beyond what's described above, which limits what could ever be exposed.</p>
   </section>
 
   <section id="choices">
     <h2><span class="sec-num">5</span>Retention &amp; your choices</h2>
     <ul>
-      <li><strong>Leaving a family</strong> stops your phone from syncing further, but trips already saved to that family's shared history aren't deleted, since other members still rely on them.</li>
-      <li><strong>Clearing trip history</strong> (Settings → Data) permanently deletes the family's saved trip records from our servers. This doesn't affect player profiles or settings.</li>
-      <li><strong>Disbanding a family</strong> (leaving as its last member) permanently retires that family's invite code and its data along with it.</li>
+      <li><strong>Deleting a trip</strong> (from Trip History) permanently removes that trip and its guesses and plates from our servers.</li>
+      <li><strong>Clearing trip history</strong> (the team's ⋯ menu on the "Who's playing today?" screen) permanently deletes all of the team's saved trip records from our servers. This doesn't affect the player list.</li>
+      <li><strong>Removing a player</strong> takes them off the team's player list. Their guesses and results in past trips stay part of that trip history.</li>
+      <li><strong>Leaving a team</strong> stops your phone from syncing further, but trips already saved to the team's shared history aren't deleted, since other members still rely on them. If yours is the last phone on the team, nothing is deleted automatically — the team's data stays on our servers and anyone with its invite code can still rejoin.</li>
       <li>If you'd like your data deleted outside of these in-app actions, contact us using the details below and we'll take care of it.</li>
     </ul>
   </section>
@@ -392,12 +399,12 @@
 
   <section id="children">
     <h2><span class="sec-num">7</span>Children's privacy</h2>
-    <p>Happy Highway Hunt is designed to be played by families together and isn't directed at children under 13 as an independent user. We don't knowingly collect personal information directly from children without a parent or guardian setting up and supervising the family group. If you believe a child has provided us information outside of that context, contact us and we'll remove it.</p>
+    <p>Happy Highway Hunt is designed to be played by families together and isn't directed at children under 13 as an independent user. We don't knowingly collect personal information directly from children without a parent or guardian setting up and supervising the team. If you believe a child has provided us information outside of that context, contact us and we'll remove it.</p>
   </section>
 
   <section id="changes">
     <h2><span class="sec-num">8</span>Changes to this policy</h2>
-    <p>If this policy changes, we'll update the effective date above and, for material changes, post a notice inside the app (Settings → About). We encourage checking back here occasionally.</p>
+    <p>If this policy changes, we'll update it on this page and change the effective date above. We encourage checking back here occasionally.</p>
   </section>
 
   <section id="contact">
@@ -412,7 +419,7 @@
   </section>
 
   <footer>
-    Happy Highway Hunt — Privacy Policy · Last updated September 16, 2026
+    Happy Highway Hunt — Privacy Policy · Last updated September 27, 2026
   </footer>
 
 </div>
